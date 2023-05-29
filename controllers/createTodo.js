@@ -7,7 +7,7 @@ const Todo = require("../models/Todo");
 exports.createTodo = async (req, res) => {
     try {
         //extract title and description from response body
-        const {title, description} = req.body;
+        const {title,  } = req.body;
         //create a new object and insert in db
         const response = await Todo.create({title,description});
         //response send
